@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <strong><!DOCTYPE html> --></strong><br>
 <html lang="en">
 
 <head>
@@ -87,23 +87,23 @@
   <div class="container">
     <!--#################START HERE#####################-->
 
-    <!-- MODAL TRIGGER -->
-    <button>Launch Modal</button>
+    <strong>MODAL TRIGGER</strong><br> 
+    <button class="btn btn-info" data-toggle="modal" data-target=#modal1>Launch Modal</button>
 
     <!-- MODAL -->
-    <div>
-      <div>
-        <div>
-          <div>
-            <h5>Modal Title</h5>
-            <button>&times;</button>
+    <div class="modal" id="modal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal Title</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
           </div>
-          <div>
+          <div class="modal-body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus unde veniam harum magnam molestias dignissimos omnis
             architecto, quod, obcaecati dolorum debitis dolore porro qui, iusto quo accusantium voluptates pariatur illo.
           </div>
-          <div>
-            <button>Close</button>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -112,14 +112,37 @@
     <br>
     <br>
 
-    <!-- LOGIN MODAL TRIGGER -->
+    <strong>LOGIN MODAL TRIGGER</strong><br>
+    <button class="btn btn-dark" data-toggle="modal" data-target="#loginModal">Login</button>
 
-
-    <!-- LOGIN MODAL -->
-
+<br/>
+    <!-- <strong>LOGIN MODAL</strong><br> -->
+    <div class="modal" id="loginModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div style="margin-top:500px;"></div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
